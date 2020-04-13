@@ -2,13 +2,34 @@
 <html>
     <head>
         <title>Form</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <form>
-            <input type="text" placeholder="First Name" name="name">
-            <input type="text" placeholder="Last Name" name="last">
+            <div id="name">
+
+                <input type="text" placeholder="First Name" name="name">
+                <input type="text" placeholder="Last Name" name="last">
+
+            </div>
+            
             <br>
+            <input type="password" placeholder="Password" name="password">
             <input type="number" placeholder="Age" name="age">
+            <input type="number" placeholder="Contact number" name="Contact">
+            <br>
+            <input name="provience" list="provience"placeholder="provience">
+            <datalist id="provience">
+                <option value="Eastern">Eastern</option>
+                <option value="Western">Western</option>
+                <option value="Northern">Northern</option>
+                <option value="Eastern">Southern</option>
+                <option value="North-Eastern">Eastern</option>
+                <option value="Sabaragamua">Eastern</option>
+                <option value="Uva">Eastern</option>
+                <option value="North-Western">Eastern</option>
+                <option value="North-central">Eastern</option>
+            </datalist>
             <br>
 
             <button>Submit</button>
